@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.romeon0.Controller">
+   <children>
+      <TextArea fx:id="taQA" layoutX="24.0" layoutY="37.0" prefHeight="434.0" prefWidth="638.0" />
+   </children>
+</Pane>

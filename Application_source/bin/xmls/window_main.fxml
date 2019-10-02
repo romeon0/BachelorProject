@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="520.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar fx:id="menuBar" layoutY="2.0" prefHeight="25.0" prefWidth="870.0">
+        <menus>
+          <Menu fx:id="menuFile" mnemonicParsing="false" text="Fisier">
+            <items>
+              <MenuItem fx:id="menuiNewNetwork" mnemonicParsing="false" text="Retea noua" />
+                  <MenuItem fx:id="menuiLoadNetwork" mnemonicParsing="false" text="Incarca retea" />
+                  <MenuItem fx:id="menuiLoadNetworkFrom" mnemonicParsing="false" text="Incarca retea din..." />
+                  <MenuItem fx:id="menuiSaveNetwork" mnemonicParsing="false" text="Salveaza retea" />
+                  <MenuItem fx:id="menuiExit" mnemonicParsing="false" text="Iesire" />
+            </items>
+          </Menu>
+            <Menu fx:id="menuSettings" mnemonicParsing="false" text="Setari">
+               <items>
+                   <Menu text="Limbaj">
+                       <items>
+                           <MenuItem mnemonicParsing="false" text="ro" />
+                           <MenuItem mnemonicParsing="false" text="eng" />
+                        <MenuItem mnemonicParsing="false" text="hun" />
+                        <MenuItem mnemonicParsing="false" text="rus" />
+                       </items>
+                   </Menu>
+               </items>
+            </Menu>
+          <Menu fx:id="menuHelp" mnemonicParsing="false" text="Ajutor">
+            <items>
+              <MenuItem fx:id="menuiHelp" mnemonicParsing="false" text="Ce fac?" />
+                  <MenuItem fx:id="menuiAboutAuthor" mnemonicParsing="false" text="Despre autor" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</Pane>

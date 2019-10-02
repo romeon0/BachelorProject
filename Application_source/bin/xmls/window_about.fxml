@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="400.0" prefWidth="397.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblDescription" layoutX="9.0" layoutY="190.0" prefHeight="145.0" prefWidth="379.0" text="Această aplicație a fost creată în 2018 ca lucrare de licență pe tema &quot;Detectarea caracterelor scrise de mână cu ajutorul rețelelor neuronale&quot; la Universitatea &quot;Petru Maior&quot;, Târgu Mureș, România." wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="326.0" text="Student: Ghercioglo Roman" />
+      <Label layoutX="11.0" layoutY="354.0" text="Bachelor work coordonator: Prof. dr. Enăchescu Călin" />
+      <ImageView fx:id="ivLogo" fitHeight="191.0" fitWidth="216.0" layoutX="103.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../files/images/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <MenuBar fx:id="menuBar" layoutY="2.0" prefHeight="25.0" prefWidth="870.0">
+           <menus>
+               <Menu fx:id="menuFile" mnemonicParsing="false" text="Fisier">
+                   <items>
+                       <MenuItem fx:id="menuiNewNetwork" mnemonicParsing="false" text="Retea noua" />
+                       <MenuItem fx:id="menuiLoadNetwork" mnemonicParsing="false" text="Incarca retea" />
+                  <MenuItem fx:id="menuiLoadNetworkFrom" mnemonicParsing="false" text="Incarca retea din..." />
+                       <MenuItem fx:id="menuiSaveNetwork" mnemonicParsing="false" text="Salveaza retea" />
+                       <MenuItem fx:id="menuiExit" mnemonicParsing="false" text="Iesire" />
+                   </items>
+               </Menu>
+               <Menu fx:id="menuSettings" mnemonicParsing="false" text="Setari">
+                  <items>
+                      <Menu text="Limbaj">
+                          <items>
+                              <MenuItem mnemonicParsing="false" text="ro" />
+                              <MenuItem mnemonicParsing="false" text="eng" />
+                              <MenuItem mnemonicParsing="false" text="hun" />
+                              <MenuItem mnemonicParsing="false" text="rus" />
+                          </items>
+                      </Menu>
+                  </items>
+               </Menu>
+               <Menu fx:id="menuHelp" mnemonicParsing="false" text="Ajutor">
+                   <items>
+                       <MenuItem fx:id="menuiHelp" mnemonicParsing="false" text="Ce fac?" />
+                       <MenuItem fx:id="menuiAboutAuthor" mnemonicParsing="false" text="Despre autor" />
+                   </items>
+               </Menu>
+           </menus>
+       </MenuBar>
+
+      <TableView fx:id="tvExamples" layoutX="31.0" layoutY="62.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="394.0" prefWidth="808.0">
+        <columns>
+            <TableColumn prefWidth="166.0" text="Numar" />
+          <TableColumn prefWidth="381.0" text="Litera recunoscuta" />
+            <TableColumn prefWidth="228.0" text="Litera corecta" />
+        </columns>
+      </TableView>
+      <HBox layoutX="335.0" layoutY="467.0" prefHeight="53.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Button fx:id="btnStart" mnemonicParsing="false" prefHeight="34.0" prefWidth="112.0" text="Incepe testarea" />
+            <Button fx:id="btnStop" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="104.0" text="Stop" />
+         </children>
+      </HBox>
+    
+       <Button fx:id="btnForward" layoutX="692.0" layoutY="468.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="152.0" text="Recunoastere &gt;" />
+       <Button fx:id="btnBackward" layoutX="27.0" layoutY="468.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="118.0" text="&lt; Antrenare" />
+      <Label fx:id="lblCorrectAnswers" layoutX="31.0" layoutY="39.0" />
+   </children>
+</Pane>

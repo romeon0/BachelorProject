@@ -1,0 +1,85 @@
+﻿# # - comment, %%% - multiline, @@@ - one line 
+# APPICON_SMALL ./files/mushrooms_logo_small.png
+%%% APP_DESC
+Această aplicație a fost creată în 2018 ca lucrare de licență pe tema "Recunoasterea caracterelor scrise de mână cu ajutorul rețelelor neuronale" la Universitatea "Petru Maior", Târgu Mureș, România.
+%%%
+@@@ YES Da
+@@@ NO Nu
+@@@ CONFIRM Confirmă
+@@@ CONFIRMATION Confirmare
+@@@ NR_EPOCHS Nr. epoci
+@@@ MAX_ERR Eroarea maximă
+@@@ LEARNING_RATE Rata de învățare
+@@@ MENU_FILE Fișier
+@@@ MENU_HELP Ajutor
+@@@ MENU_SETTINGS Setări
+@@@ NEW_NET Rețea nouă
+@@@ LOAD_NET Incarcare rețea
+@@@ LOAD_NET_FROM Incarcare rețea din...
+@@@ SAVE_NET Salvează rețea
+@@@ EXIT Ieși
+@@@ CONFIRMEXIT_TRAIN Rețeaua se antrenează. Sigur vreți să ieșiți?
+@@@ CONFIRMEXIT_RECOGN Sigur vreți sa ieșiți?
+@@@ CONFIRMEXIT_TEST Procesul de testare nu s-a terminat. Sigur vreți să ieșiți?
+@@@ TRAINCHART_TITLE Eroarea rețelei la fiecare epocă
+@@@ TRAINCHART_INFO Eroarea rețelei
+@@@ LETTER Litera
+@@@ THE_WORD Cuvântul
+@@@ WORD Cuvânt
+@@@ ERR_WEIGHTSNOTLOADED Eroare în parsarea fișierului cu greutățile salvate
+@@@ EPOCH Epoca
+@@@ EPOCH_ERR Eroarea epocii
+@@@ CORRECT_GUESSED Litere recunoscute corect
+@@@ SAVE Salvare
+@@@ SOMETHING_WRONG Ceva greșit...
+@@@ LOADING_TESTSET Incarcare setul de testare...
+@@@ LOADING_TRAINSET Incarcare setul de antrenare...
+@@@ CLEAR Șterge
+@@@ UNDO Inainte
+@@@ REDO Inapoi
+@@@ PENCIL Creion
+@@@ ERASER Gumă
+@@@ ADDLETTER Adauga litera
+@@@ IDENTIFY Identifică
+@@@ START Start
+@@@ STOP Stop
+@@@ FAQ Întrebări frecvente
+@@@ HELP Ajutor
+@@@ ABOUT Despre program
+@@@ LANGUAGE Limbaj
+@@@ TRAINING Antrenare
+@@@ TESTING Testare
+@@@ RECOGNIZING Recunoaștere
+@@@ NUMBER Număr
+@@@ RECOGNIZED_LETTER Litera recunoscută
+@@@ CORRECT_LETTER Litera corectă
+@@@ REC_LETTER_OR_WORD Litera/cuvântul recunoscut
+@@@ REC_MOSTPROB_LETTERS Cea mai probabila literă/cuvânt
+@@@ DRAW_LETTER Desenează litera
+
+%%% FAQ1
+* Ce face aplicația?<br>
+Aplicația detectează textul scris de mâna și îl transformă în text editabil în sistemele de calcul(laptop,PC,telefon ș.a.m.d). 
+%%%
+%%% FAQ2
+* Cum lucrez cu aplicația?<br>
+Pentru a detecta caracterele este necesar să antrenăm ”Creierul” aplicației sau să încărcăm memoria salvată.
+- În cazul când vrem să antrenăm singuri Creierul folosim opțiunea ”Rețea nouă” din meniul Fișier.
+Pentru a forma un Creier nou trebuie să parcurgem faza de antrenare în care acesta învață prin exemple, faza de testare îm care vedem câte a învățat și ultima faza este cea de recunoaștere 
+în care utilizatorul desenează caracterele și Creierul le gicește.<br>
+- Daca nu vrem sa antrenăm Creierul din nou, optăm punctul ”Încarcă rețea din...” pentru a cauta memoria salvata 
+sau ”Încarcă rețea" pentru a încărca memoria cu calea predefinita. Dacă structura fișierelor aplicației nu a fost stricata fișierul cu memoria salvată se află în dosarul ”[directorul aplicației]/files/network” cu numele ”memory.weights”.
+%%%
+%%% FAQ3
+* Ce este o rețea neuronală?<br>
+O rețea neuronală reprezintă o simulare a creierului uman. Similar cu creierul uman are neuroni și greutăți sinaptice.
+%%%
+%%% FAQ4
+* Ce este rata de învățare?<br>
+Rata de învățare reprezintă viteza cu care Creierul, învățând, va găsi soluția pentru problema propusă: fie detectare caracterelor, rezolvarea unui credit
+în banc sau altele. Este important de constatat faptul că dacă rata de învățare este prea mare atunci Creierul poate sări peste soluția necesara. 
+%%%
+%%% FAQ5
+* Ce înseamna epoca?<br>
+O epoca este un pas în care toate exemplele merg prin ambele faze: propagare înainte în care Creierul proceseaza exemplul primit și formeaza un raspuns și a doua fază în care se corectează bazându-se pe răspunsul corect.
+%%%

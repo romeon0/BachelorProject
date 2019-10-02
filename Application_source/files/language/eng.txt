@@ -1,0 +1,85 @@
+# # - comment, %%% - multiline, @@@ - one line 
+# APPICON_SMALL ./files/mushrooms_logo_small.png
+%%% APP_DESC
+This application was created in 2018 as bachelor work with theme "Optical caracter recognition using neural networks" at "Pentru Maior" University, Targu Mures, Romania.
+%%%
+@@@ YES Yes
+@@@ NO No
+@@@ CONFIRM Confirm
+@@@ CONFIRMATION Confirmation
+@@@ NR_EPOCHS Nr. epochs
+@@@ MAX_ERR Max error
+@@@ LEARNING_RATE Learning rate
+@@@ MENU_FILE File
+@@@ MENU_HELP Help
+@@@ MENU_SETTINGS Settings
+@@@ NEW_NET New network
+@@@ LOAD_NET Load network
+@@@ LOAD_NET_FROM Load network from...
+@@@ SAVE_NET Save network
+@@@ EXIT Exit
+@@@ CONFIRMEXIT_TRAIN Training process is running. Are you sure you want to exit?
+@@@ CONFIRMEXIT_RECOGN Are you sure you want to exit?
+@@@ CONFIRMEXIT_TEST Testing process is running. Are you sure you want to exit?
+@@@ TRAINCHART_TITLE Network error at each epoch
+@@@ TRAINCHART_INFO Network error
+@@@ LETTER Letter
+@@@ THE_WORD The word
+@@@ WORD Word
+@@@ ERR_WEIGHTSNOTLOADED Error in parsing the file with saved weights
+@@@ EPOCH Epoch
+@@@ EPOCH_ERR Epoch error
+@@@ CORRECT_GUESSED Good answered letters
+@@@ SAVE Saving
+@@@ SOMETHING_WRONG Something wrong...
+@@@ LOADING_TESTSET Loading testing set...
+@@@ LOADING_TRAINSET Loading training set...
+@@@ CLEAR Clear
+@@@ UNDO Undo
+@@@ REDO Redo
+@@@ PENCIL Pencil
+@@@ ERASER Eraser
+@@@ ADDLETTER Add letter
+@@@ IDENTIFY Identify
+@@@ START Start
+@@@ STOP Stop
+@@@ FAQ FAQ
+@@@ HELP Help
+@@@ ABOUT About program
+@@@ LANGUAGE Language
+@@@ TRAINING Training
+@@@ TESTING Testing
+@@@ RECOGNIZING Recognizing
+@@@ NUMBER Number
+@@@ RECOGNIZED_LETTER Recognized letter
+@@@ CORRECT_LETTER Correct letter
+@@@ REC_LETTER_OR_WORD Recognized letter/word
+@@@ REC_MOSTPROB_LETTERS Most probably letter/word
+@@@ DRAW_LETTER Draw letter
+
+%%% FAQ1
+* What application do?<br>
+The aplication detects handwritted text and transforms it in editable text for calculus systems(laptop,PC,telephone and so on).<br> 
+%%%
+%%% FAQ2
+* How can I user the application?<br>
+If you want to detect letters you need to train "The Brain" of aplication, or load saved memory.
+- In first case you need to select option "New network" from "Network" menu.
+To training The Brain we need to training phase when it learn from examples, testing phase when we are watching how many knowledge it learning and recognizing phase where the user draw letters or words and The Brain is guessing.<br>
+- If we don't want to train The Brain we need to select "Load network from..." option and search saved memory file or "Load network" to load predefinited memory file.
+If file structure isn't damaged we will find saved memory in directory "[application directory]/files/network" and it is named "memory.weights". 
+%%%
+%%% FAQ3
+* What is a neural network?<br>
+A neural network represent a simulation of human brain. Similarly with human brain neural network has neurons and connections between them.
+%%%
+%%% FAQ4
+* What is learning rate?<br>
+The learning rate represent the speed that The Brain learn, so it will find solution much faster, 
+no differences what problem is: character detecting, resolving a creding or so on.
+It is important to say that too big learning rate can jump the solution of problem.
+%%%
+%%% FAQ5
+* What is epoch?<br>
+A epochs is a iteration in which The Brain processed all examples and for each example obtained a response and corrected its knowledges based on correct answer.
+%%%

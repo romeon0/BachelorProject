@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="root" prefHeight="518.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.romeon0.Controller">
+   <children>
+      <Label layoutX="25.0" layoutY="18.0" text="Deseaneaza litera">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f7f7" height="128.0" layoutX="17.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" width="128.0" />
+      <Canvas fx:id="cnvDrawField" height="128.0" layoutX="17.0" layoutY="38.0" width="128.0" />
+      <Label layoutX="654.0" layoutY="18.0" text="Cuvantul\litera prezisa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="128.0" layoutX="604.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" width="238.0" />
+      <Label fx:id="lblNetworkAnswer" layoutX="691.0" layoutY="35.0" prefHeight="135.0" prefWidth="65.0" text="A" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="92.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAddLetter" layoutX="152.0" layoutY="38.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="99.0" text="Adauga litera" />
+      <Button fx:id="btnClearCanvas" layoutX="17.0" layoutY="171.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Sterge" />
+      <Button fx:id="btnRedo" disable="true" layoutX="100.0" layoutY="171.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Inapoi" />
+      <Button fx:id="btnUndo" disable="true" layoutX="186.0" layoutY="171.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Inainte" />
+      <Button fx:id="btnEraser" layoutX="290.0" layoutY="171.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Guma" />
+      <Button fx:id="btnPencil" layoutX="377.0" layoutY="171.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Creion" />
+      <ScrollPane fx:id="paneLetters" layoutX="17.0" layoutY="200.0" prefHeight="184.0" prefWidth="825.0">
+         <content>
+            <HBox fx:id="hboxLetters" prefHeight="184.0" prefWidth="822.0" />
+         </content>
+      </ScrollPane>
+      <VBox fx:id="vboxSettings" layoutX="13.0" layoutY="390.0" prefHeight="128.0" prefWidth="555.0" spacing="2.0">
+         <children>
+            <Button fx:id="btnSegment" disable="true" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="99.0" text="Segmenteaza" />
+            <HBox fx:id="hboxTrainData" prefHeight="38.0" prefWidth="519.0" spacing="3.0">
+               <children>
+                  <Label text="Date antrenare" />
+                  <TextField fx:id="tfTrainDataPath" editable="false" text="E:\Projects\Java\Neuronal_Nets\CharRecognition\trainset.dataset" />
+                  <Button fx:id="btnTrainDataFind" mnemonicParsing="false" text="Cauta" />
+                  <Button fx:id="btnTrainDataLoad" layoutX="244.0" layoutY="10.0" mnemonicParsing="false" text="Incarca" />
+                  <Button fx:id="btnTrain" mnemonicParsing="false" prefHeight="35.0" prefWidth="99.0" text="Antreneaza" />
+                  <Button fx:id="btnTrainStop" layoutX="351.0" layoutY="10.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="99.0" text="Stop" />
+               </children>
+            </HBox>
+            <HBox fx:id="hboxTestData" layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="424.0" spacing="3.0">
+               <children>
+                  <Label text="Date testare" />
+                  <TextField fx:id="tfTestDataPath" editable="false" />
+                  <Button fx:id="btnTestDataFind" mnemonicParsing="false" text="Cauta" />
+                  <Button fx:id="btnTestDataLoad" layoutX="230.0" layoutY="10.0" mnemonicParsing="false" text="Incarca" />
+                  <Button fx:id="btnTest" mnemonicParsing="false" prefHeight="35.0" prefWidth="99.0" text="Testeaza" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="btnIdentify" layoutX="152.0" layoutY="78.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="99.0" text="Identifica" />
+   </children>
+</Pane>
